@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Strengths-Based Training for Teachers, Carers, Parents and More">
+    <meta name="author" content="Hannah Bouzaid">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="date.created" content="2021-05-12"> <!--Date created-->
+    <meta name="date.updated" content="2021-10-25"> <!--Date last updated-->
+    <title>Safe for Children</title>
+    <link rel="stylesheet" href="CSS/design.css" title="Design"/>
+</head>
+
+<body>
+    <div class="content">
+         <!--Navigation Starts Here-->
+         <nav>
+            <p><a href="index.html"><img src="images/logo.png" alt="safe for children logo" class="logo"></a></p>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="about.html">About</a></p>
+            <p><a href="partners.html">Our Partners</a></p>
+            <div class="dropdown">
+                <p>
+                    <a href="training.html">Training &#9660;</a>
+                </p>
+                <div class="dropdown-content">
+                    <a href="liveonlinetraining.html">Live Online Training</a>
+                    <a href="listenondemand.html">Listen On-Demand</a>
+                    <a href="inpersontraining.html">In-Person Training</a>
+                </div>
+            </div>
+            <p><a href="contactus.html" style="color: #f7931e;">Contact Us</a></p>
+            <a href="signup.html" style=color:white><p class="button_signup">Course Sign Up</p></a>
+        </nav>
+        <!--Navigation Ends Here-->
+
+        <div class="main">
+        <!--Main Content Starts Here-->
+            <h1>Contact Us</h1>
+            <div class="row">
+                <div class="column">
+                    <h3>We would love to hear from you. Please give us a call today or use the form to the right.</h3>
+                    <h3><img src="images/black_phone.png" style="width: 5%; padding-right: 5px" alt="black phone icon">0800 723 3454 (0800 SAFE4KIDS) </h3>
+                    <h5>Donna Bouzaid &#124; Director &#124; 027 5920533</h5>
+                    <p>
+                        PO Box 99762<br>Newmarket<br>Auckland 1149<br>New Zealand
+                    </p>
+                    <img src="images/person_writing_diary.jpg" style="width: 100%" alt="Person writing in a diary">
+                </div>
+                <div class="column">
+                    <form action="action_page.html" target="_blank" method="get" onsubmit="myFunction();" autcomplete="on">
+                        <fieldset>
+                            <label for="name">Name<span style="color:#f7931e /*Orange*/">&#42;</span></label><br>
+                            <input type="text" id="name" name="name" required><br>
+                            <label for="email">Email<span style="color:#f7931e /*Orange*/">&#42;</span></label><br>
+                            <input type="email" id="email" name="email" required><br>
+                            <label for="phone">Phone Number</label><br>
+                            <input type="tel" id="phone" name="phone" minlength="9" maxlength="12"><br>
+                            <label for="message">Message<span style="color:#f7931e /*Orange*/">&#42;</span></label><br>
+                            <textarea name="message" id="message" rows="10" cols="30" required></textarea><br><br>
+                            Would you like to subscribe to regular training updates?<span style="color:#f7931e /*Orange*/">&#42;</span><br>
+                            <input type="radio" id="yes_update" name="training_update" value="Yes" required>
+                            <label for="yes_update">Yes</label><br>
+                            <input type="radio" id="no_update" name="training_update" value="No">
+                            <label for="no_update">No</label><br><br>
+                            <input type="submit" value="Send">
+                        </fieldset> 
+                        <script>
+                            function myFunction() {
+                                alert("Your message has been received. We will get back to you as soon as possible!")
+                            }
+                        </script>
+                    </form>
+                </div>
+            </div>
+        <!--Main Content Ends Here-->
+        </div>
+    <!--Footer Starts Here-->
+    <div class="footer">
+        <div class="row">
+            <div class="column">
+                <h3>Contact Us</h3>
+                <p><img src="images/phone.png" alt="phone icon"> 0800 SAFE4KIDS<br>(0800 723 3454)</p>
+                <p>PO Box 99762, Newmarket, Auckland 1149<br>
+                    <a href="mailto:admin@safeforchildren.co.nz" class="footer_link">&#9993; admin@safeforchildren.co.nz</a>
+                </p>
+                <h3><a href="signup.html" class="footer_link">Course Sign Up</a></h3>
+            </div>
+            <div class="column">
+                <h3 class="center">Quick Links</h3>
+                <p><a href="copyright.html" class="footer_link">Copyright</a></p>
+                <p><a href="contactus.html" class="footer_link">Contact Us</a></p>
+                <p><a href="liveonlinetraining.html" class="footer_link">Live Online Training</a></p>
+                <p><a href="listenondemand.html" class="footer_link">Listen On-Demand</a></p>
+                <p><a href="inpersontraining.html" class="footer_link">In-Person Training</a></p>
+            </div>
+        </div>
+        <h6 class="center">&copy; 2020 Safe for Children trading as a registered 
+            trademark of Quality Assurance New Zealand Limited &#124; 
+            <a href="https://f8548509-d422-442d-91a3-fe4de654c7a3.filesusr.com/ugd/ea7790_f623f4a10c1e403695237a142460347a.pdf" class="footer_link" target="_blank">
+              Terms and guidelines for Safe for Children training and services  </a>
+            </h6>
+    </div>
+    <!--Footer Ends Here-->
+    </div>
+</body>
+</html>

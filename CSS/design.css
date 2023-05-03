@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&display=swap');
+body {
+    font-family: Tahoma;
+    background-color: #eeeeeeff; /* Light grey */
+    color: black;
+}
+div.content {
+    margin: auto;
+}
+.main {
+    background-color: white ;
+    padding: 10px;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: 'Roboto', sans-serif;
+}
+/* Footer */
+div.footer {
+    background-color: #f7931e; /* Orange */
+    color: #eeeeeeff; /* Light grey */
+    padding: 10px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+.footer_link {
+    color: #eeeeeeff; /* Light grey */
+    font-style: italic;
+    text-decoration: none;
+}
+.footer_link:hover {
+    color: #a9a9a9ff;
+}
+h6 {
+    font-family: 'Roboto', sans-serif;
+}
+.imagelink:hover {
+    opacity: 0.5;
+}
+
+/*Text align */
+.center { /*align text to center */
+    text-align: center;
+}
+.left { /*align text to left */
+    float: left;
+    padding-right: 10px;
+}
+.right { /*allign text to the right */
+    float: right;
+    padding-right: 10px;
+}
+h1, h2 { /* Headers */
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+h1 {
+    color: #0071bc; /* Blue */
+}
+.italic{
+    font-weight: normal; /*Text under this heading tag not bold */
+    font-style: italic;
+}
+
+/* Navigation */
+nav {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+}
+nav p {
+    text-align: center;
+    flex-basis: 100px; /* Give each paragraph the same basic width */
+    flex-grow: 1; /* Allow each paragraph to grow evenly to fill up the parent nav element */
+    font-family: 'Rubik', sans-serif;
+}
+.logo {
+    width: 300px;
+}
+
+/*Navigation Links */
+nav a {
+    text-decoration: none;
+    color: black;
+}
+nav a:hover, div.dropdown:hover { color: #f7931e; /* Orange */ }
+nav a:active {font-weight: bold;}
+
+/* Navigation drop down */
+.dropdown {
+    flex-basis: 100px; /* Give each paragraph the same basic width */
+    flex-grow: 1; /* Allow each paragraph to grow evenly to fill up the parent nav element */
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*Navigation button */
+.button_signup {
+    font-size: medium; 
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: #0071bc; /* Blue */
+    margin: 0;
+    color: white;
+    text-decoration: none;
+}
+.button_signup:hover {
+    background-color: #4ea0cc; /* Lighter Blue */
+    color: white; 
+}
+
+/*Page Links */
+a.link:link{
+    color:#0071bc; /* Blue */
+    text-decoration: none;
+} 
+a.link:visited{color:#0071bc;} /* Blue */
+a.link:hover{color: #f7931e;} /* Orange */
+a.link:active{color:#f7931e;} /* Orange */
+
+/*Home screen Banner*/
+.banner {
+    position: absolute;
+    top: 50%;
+    left: 27.5%;
+    transform: translate(-50%, -50%);
+    background-color: #eeeeeeff; /* Light grey */
+    opacity: 0.8;
+    height: 100%;
+    width: 25%;
+    text-align: center;
+}
+.banner_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150%;
+}
+.banner-container {
+    position: relative;
+    text-align: center;
+}
+
+/*Text overtop of course type images*/
+.columncourses { /*Four columns that float next to each other */
+    position: relative;
+    text-align: center;
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+.coursetype_titletext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+/*Columns for training options*/
+div.column { /*Two columns that float next to each other */
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+div.columntraining { /*Three columns that float next to each other */
+    float: left;
+    width: 33.333%;
+}
+div#courseoptions {
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: white;
+}
+.courseimage {
+    opacity: 0.5;
+}
+div#columnborder {
+    border-right: solid #eeeeeeff /* Light grey */ 1px;
+}
+div.row:after { /*Clear floats after the columns*/
+    content: "";
+    display: table;
+    clear: both;
+}
+div.coursetype {
+    background: linear-gradient(to bottom right, #0071bc 0%, #4ba3deff 100%);
+    color: #eeeeeeff /* Light grey */;
+    padding: 10px;
+    border: solid #eeeeeeff 1px;
+}
+.bigscreen_image {
+    width: 30%;
+}
+* {
+    box-sizing: border-box;
+}
+
+table.listenondemand_table {
+    text-align: center;
+    width: 100%;
+}
+td.listenondemand_table {
+    border: solid black 1px;
+    text-align: center;
+}
+h3.listenondemand_table {
+    color: #f7931e;
+}
+tr.listenondemand_table {
+    padding: 20px;
+}
+table.signup_table {
+    text-align: center;
+    width: 100%;
+}
+td.signup_table {
+    border: solid black 1px;
+}
+a.signup_table {
+    color: #f7931e;
+    text-decoration: none;
+}
+
+/*Read more and less button*/
+#more {
+    display: none;
+}
+.more_button {
+    background-color: #0071bc;
+    color:white;
+    font-size: medium; 
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    margin: 0;
+}
+.more_button:hover {
+    background-color: #4ea0cc; /* Lighter Blue */
+    color: white;
+}
+/*Contact us form */
+form {
+    float: right;
+    height: 100%;
+    background-color: #4ba3deff /* Blue */;
+    color: #eeeeeeff /* Light grey */;
+}
+input[type=text], [type=email], [type=tel], textarea, select {
+    width: 100%;
+    padding: 5px 13px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #787878ff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #eeeeeeff /* Light grey */;
+    font-family: 'Roboto', sans-serif;
+}
+input[type=submit] {
+    background-color: #eeeeeeff /* Light grey */;
+    color: black;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+}
+input[type=submit]:hover {
+    background-color: white;
+}
+
+/*Testimonials rotating box */
+div.testimonials { /*Testimonials Box */
+    background-color: #0071bc; /* Blue */
+    color: #eeeeeeff; /* Light grey */
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.slideshow-container { /* Slideshow container */
+    position: relative;
+    margin: auto;
+}
+.slideshow { /* Hide the images by default */
+    display: none;
+}
+.prev, .next { /* Next & previous buttons */
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next { /* Next button on the right */
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover { /* On hover, make arrows a bit see-through */
+    opacity: 0.5;
+} 
+.dot { /* Dots */
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #eeeeeeff /* Light grey */;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+} 
+.active, .dot:hover {
+    background-color: #a9a9a9ff; /*light grey */
+}
+.testimony_text {
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    min-height: 115px;
+    font-style: italic;
+}
+
+/*Lists*/
+ul.list_a {
+    list-style-position: outside;
+}
+ul.list_b {
+    list-style-position: inside;
+}
+li.heading {
+    font-weight: normal; 
+    list-style: none;
+    font-weight: bold;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: .5s;
+}  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/*Table on partners page */
+td {
+    padding: 10px;
+}
+.partner_image {
+    border-radius: 50%; /* Make images circular */
+}
+
+/*Videos*/
+video {
+    float: left;
+    padding-right: 10px;
+}
+
+/* For smaller screen widths */
+@media screen and (max-width: 700px) {
+    div.main {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    nav {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        transition: 0.5s;
+        text-align: center;
+        display: list-item;
+    }
+    nav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+        transition: 0.3s;
+    }
+    .dropdown-content {
+        width: 100%;
+    }
+    .dropdown-content a {
+        text-align: center;
+        width: 100%;
+    }
+    div.caption {
+        font-size: 1em;
+    }
+    div.column, div.columncourses, div.columncoursestraining, div.columntraining {
+        width: 100%;
+    }
+    .bigscreen_image {
+        width: 200px;
+        height: 200px;
+    }
+    video {
+        width: 200px;
+    }
+    .banner_text {
+        font-size: 70%;
+    }
+}
+@media screen and (max-width: 1050px) and (min-width: 700px){
+    .banner_text {
+        font-size: 90%
+    }
+}
+@media screen and (min-width: 1600px) {
+    .bigscreen_image {
+        height: 300px;
+        width: 300px;
+    }
+    P {
+        font-size: 1.1em;
+    }
+}
